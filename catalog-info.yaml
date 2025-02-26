@@ -1,0 +1,20 @@
+# For more information about the available options please visit: http://go/catalog-info (VPN required)
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    github.com/project-slug: Unity-Technologies/patcher
+    backstage.io/techdocs-ref: dir:.
+  name: patcher
+  description: "Patcher is a GO library that provides a simple way to generate and SQL patches from structs. The library was built out of the need to generate patches for a database; when a new field is added to a struct, this would result in a bunch of new if checks to be created in the codebase. This library aims to solve that problem by generating the SQL patches for you."
+  labels:
+    costcenter: "5111"
+  links:
+    - url: https://unity.slack.com/messages/C8GB73GJK/
+      title: "#ask-multiplay"
+      icon: chat
+spec:
+  type: library
+  lifecycle: production
+  owner: unity-technologies/mps-senior-engineering
+
